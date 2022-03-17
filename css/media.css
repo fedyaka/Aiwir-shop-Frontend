@@ -6,14 +6,10 @@
 
 }
 
-@media(max-width: 950px){
+@media(max-width: 850px){
 	.header_btn_menu{
 		display: block;
 	}
-}
-
-
-@media(max-width: 650px){
 }
 
 
