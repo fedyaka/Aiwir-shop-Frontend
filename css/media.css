@@ -10,8 +10,31 @@
 	.header_btn_menu{
 		display: block;
 	}
+	.menu ul{
+		display: none;
+	}
 }
 
+
+@media(max-width: 600px){
+	.main_container{
+		width: 100%;
+	}
+	.about_me{
+		margin: 10px;
+	}
+
+
+	.to_order_text p{
+		font-size: 6.3vw;
+	}
+	.to_order_text a{
+		font-size: 5.3vw;
+		padding: 6px 15px 12px 15px;
+		margin-top: 25px;
+	}
+
+}
 
 
 @media(min-width: 1300px){

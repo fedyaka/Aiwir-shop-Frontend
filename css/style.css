@@ -24,19 +24,21 @@ ul{
 body{
 	/*font-family: 'Oswald', sans-serif;*/
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 400;
 }
 
 /*----HEADER----*/
 
 .header_btn_menu{
+	float: left;
+	width: 70px;
+	margin-top: 20px;
+	margin-left: 5%;
+	font-size: 33px;
 	display: none;
 }
-.btn_menu{
-	font-family: 'icomoon';
-	content: "\e9bd";
-}
+
 icon-menu
 
 
@@ -45,6 +47,8 @@ nav{
 }
 
 nav ul{
+	float: left;
+	width: 87%;
 	display: flex;
 	justify-content: space-around;
 }
@@ -55,6 +59,8 @@ nav a{
 	padding: 20px 1.5vh;
 }
 .basket{
+	display: block;
+	float: right;
 	position: relative;
 	padding-right: 60px;
 }
@@ -66,6 +72,9 @@ nav a{
 	left: 50px;
 	bottom: 18px;
 }
+
+
+
 
 /*----MAIN----*/
 
@@ -131,6 +140,7 @@ nav a{
 
 
 .top_sales{
+	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	margin-bottom: 20px;
 	text-align: center;
@@ -139,36 +149,54 @@ nav a{
 
 .top_goods{
 	width: 100%;
-	padding: 10px 0;
 	text-align: center;
 }
 
 
+
 /*-goods*/
+
+
 .goods{
-	margin: 15px;
 	display: inline-block;
-	height: 230px;
-	width: 170px;
+	max-height: 230px;
+	max-width: 170px;
+	margin: 10px 0;
 	padding: 7px;
-	text-align: center;
 	background-color: white;
 }
 .image_goods{
 	height: 150px;
 	width: 150px;
 	margin: auto;
-	background-image: url(../images/goods.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
+	background-color: #F0F0F0;
 }
-.goods_item p{
-    font-size: 30px;
+.image_goods img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.text_goods{
+	margin-left: 5%;
+	text-align: left;
+}
+.text_goods a{
+	line-height: 45px;
+}
+.text_goods hr{
+	margin-left: 2px;
+	width: 70%;
+}
+.text_goods p{
+	line-height: 30px;
+    font-size: 20px;
     color: #EA8383;
 }
 
 
+
 /*-to_order-*/
+
 
 .to_order{
 	position: relative;
@@ -202,7 +230,9 @@ nav a{
 }
 
 
+
 /*-about_me*/
+
 
 .about_me img{
 	width: 30%;
