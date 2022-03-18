@@ -11,6 +11,7 @@
 		display: block;
 	}
 	.pushmenu_active{
+		top: 0;
 		right: -1000px;
 		padding-right: 1000px;
 		padding-bottom: 2000px;
@@ -40,11 +41,13 @@
 		transform: translateX(0);
 	}
 
-	.basket{
-		position: absolute;
-		bottom: 5%;
-		right: 30px;
+	.wrapper_basket{
+		display: none;
 	}
+	.pushmenu_basket{
+		display: block;
+	}
+
 
 
 	.menu-list a{

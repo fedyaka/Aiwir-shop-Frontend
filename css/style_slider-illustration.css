@@ -1,0 +1,50 @@
+
+
+
+/*----SLIDER----*/
+
+
+.slider_illustration{
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.slider_illustration_inner{
+	position: relative;
+	width: 100%;
+}
+.slider_illustration_item{
+	text-align: center;
+	z-index: 0;
+	height: 40vw;
+	max-height: 500px;
+}
+.slider_illustration_item img{
+	object-fit: contain;
+	height: 100%;
+	display: inline-block;
+}
+
+.slick-btn-ill{
+	position: absolute;
+	border: none;
+	background-color: transparent;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	width: 50px;
+}
+.slick-prev-ill{
+	left: 0;
+}
+.slick-next-ill{
+	right: 0;
+}
+
+.icon-ill:before{
+	font-size: 50px;
+	color: #C4C4C4;
+
+}

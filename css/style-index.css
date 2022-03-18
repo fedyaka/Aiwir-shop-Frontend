@@ -1,0 +1,126 @@
+
+/*----MAIN----*/
+
+.main_container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*-top sales*/
+
+.logo_main{
+	display: block;
+	width: 200px;
+	margin: 50px auto 15px auto;
+}
+
+
+.top_sales{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+.top_goods{
+	width: 100%;
+	text-align: center;
+}
+
+
+
+/*-goods*/
+
+
+.goods{
+	display: inline-block;
+	max-height: 230px;
+	max-width: 170px;
+	margin: 10px 0;
+	padding: 7px;
+	background-color: white;
+}
+.image_goods{
+	height: 150px;
+	width: 150px;
+	margin: auto;
+	background-color: #F0F0F0;
+}
+.image_goods img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.text_goods{
+	margin-left: 5%;
+	text-align: left;
+}
+.text_goods a{
+	line-height: 45px;
+}
+.text_goods hr{
+	margin-left: 2px;
+	width: 70%;
+}
+.text_goods p{
+	line-height: 30px;
+    font-size: 20px;
+    color: #EA8383;
+}
+
+
+
+/*-to_order-*/
+
+
+.to_order{
+	position: relative;
+	margin: 100px 0;
+}
+
+.to_order img{
+	width: 100%;
+}
+.to_order_text{
+	position: absolute;
+	text-align: center;
+	top: 0;
+	right: 0;
+	margin: 10% 15%;
+}
+
+.to_order_text p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 5.3vw;
+	color: white;
+}
+.to_order_text a{
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	padding: 0.9vw 2.0vw 1.5vw 2.0vw;
+	font-size: 4.3vw;
+	color: white;
+	background-color: #467D85;
+	margin-top: 4vw;
+}
+
+
+
+/*-about_me*/
+
+
+.about_me img{
+	width: 17%;
+	min-width: 120px;
+	float: left;
+}
+
+.about_me h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+
+.about_me p{
+	text-align: justify;
+}
