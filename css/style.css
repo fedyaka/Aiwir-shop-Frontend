@@ -50,11 +50,11 @@ body{
 .menu-list{
 	z-index: 100;
 	float: left;
-	width: 87%;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-.menu-list a{
+.item_menu{
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
 	display: block;
@@ -274,16 +274,19 @@ footer{
 	margin: 0 auto;
 }
 
-.container_footer div{
-	width: 200px;
-	margin: 30px 0;
-}
 
 .info_footer{
+	width: 200px;
+	margin: 30px 0;
 	min-width: 170px;
 }
+
 .contact_footer{
+	width: 200px;
+	margin: 30px 0;
 	min-width: 194px;
+	float: right;
+	height: 50px;
 }
 
 .title_footer{
@@ -294,20 +297,28 @@ footer{
 	font-size: 18px;
 	font-weight: 300;
 }
-
+.icon_contact{
+	display: none;
+}
+.icon_footer {
+	width: 200px;
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-around;
+}
+.instagram{
+	margin: 10px;
+}
 .instagram:before{
     font-family: 'icomoon';
     content: "\e902";
     font-size: 40px;
 }
-
+.behance{
+	margin: 10px;
+}
 .behance:before{
     font-family: 'icomoon';
     content: "\e904";
     font-size: 40px;
-}
-
-.icon_footer {
-	display: flex;
-	justify-content: space-around;
 }
