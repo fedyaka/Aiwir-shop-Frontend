@@ -6,12 +6,45 @@
 
 }
 
-@media(max-width: 850px){
-	.header_btn_menu{
+@media(max-width: 910px){
+	.pushmenu{
 		display: block;
 	}
-	.menu ul{
-		display: none;
+	.pushmenu_active{
+		right: -1100px;
+		padding-right: 1000px;
+		padding-bottom: 2000px;
+	}
+	.logo_head{
+		display: block;
+	}
+	.menu-list hr{
+		display: block;
+	}
+	.menu-list{
+		background-color: white;
+		display: block;
+		position: fixed;
+		width: 300px;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		transition: 0.5s;
+		transform: translateX(-100%);
+	}
+	.menu-list a{
+		margin: 10px 0;
+		display: block;
+	}
+
+	.menu_active{
+		transform: translateX(0);
+	}
+	.content{
+		transition: 0.5s;
+	}
+	.content_active{
+		transform: translateX(300px);
 	}
 }
 

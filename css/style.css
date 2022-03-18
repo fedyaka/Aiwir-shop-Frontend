@@ -15,6 +15,7 @@ ul{
 
 
 .container{
+	position: relative;
 	width: 80%;
 	margin: auto;
 	max-width: 1300px;
@@ -22,6 +23,7 @@ ul{
 
 
 body{
+	overflow-x: hidden;
 	/*font-family: 'Oswald', sans-serif;*/
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 24px;
@@ -30,29 +32,29 @@ body{
 
 /*----HEADER----*/
 
-.header_btn_menu{
-	float: left;
-	width: 70px;
-	margin-top: 20px;
-	margin-left: 5%;
-	font-size: 33px;
+.pushmenu{
 	display: none;
+	position: absolute;
+	top: 20px;
+	right: -100px;
+	width: 70px;
+	font-size: 33px;
+	cursor: pointer;
 }
 
-icon-menu
 
-
-nav{
+.nav{
 	margin: 0 50px;
 }
 
-nav ul{
+.menu-list{
+	z-index: 100;
 	float: left;
 	width: 87%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
-nav a{
+.menu-list a{
 	font-family: 'Oswald', sans-serif;
 	font-size: 25px;
 	display: block;
@@ -62,19 +64,25 @@ nav a{
 	display: block;
 	float: right;
 	position: relative;
-	padding-right: 60px;
+	padding: 20px 60px 20px 0;
 }
 .basket:after{
 	font-family: 'icomoon';
 	content: "\f291";
 	font-size: 25px;
 	position: absolute;
-	left: 50px;
-	bottom: 18px;
+	left: 30px;
+	bottom: 20px;
 }
 
-
-
+.logo_head{
+	width: 80%;
+	margin: 20px auto;
+	display: none;
+}
+.menu-list hr{
+	display: none;
+}
 
 /*----MAIN----*/
 
