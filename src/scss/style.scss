@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+a, p{
+	color: black;
+}
+ul{
+	list-style: none;
+}
+
+
+$font-oswald: 'Oswald', sans-serif;
+$font-roboto: 'Roboto Condensed', sans-serif;
+
+.container{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	max-width: 1300px;
+}
+.main_container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+body{
+	overflow-x: hidden;
+    font-family: $font-roboto;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/*--slider-illustration--*/
+
+@import "_slider-illustration";
+
+/*---- HEADER ----*/
+
+@import "_header";
+
+/*---- INDEX ----*/
+
+@import "_index";
+
+/*---- FOOTER ----*/
+
+@import "_footer";

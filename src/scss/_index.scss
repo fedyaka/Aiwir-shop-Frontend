@@ -1,11 +1,3 @@
-
-/*----MAIN----*/
-
-.main_container{
-	width: 80%;
-	margin: 0 auto;
-}
-
 /*-top sales*/
 
 .logo_main{
@@ -15,7 +7,7 @@
 }
 
 
-.top_sales{
+.top-goods__title{
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	margin-bottom: 20px;
@@ -23,7 +15,7 @@
 }
 
 
-.top_goods{
+.top-goods__row{
 	width: 100%;
 	text-align: center;
 }
@@ -71,18 +63,18 @@
 
 
 
-/*-to_order-*/
+/*-to-order-*/
 
 
-.to_order{
+.to-order{
 	position: relative;
 	margin: 100px 0;
 }
 
-.to_order img{
+.to-order img{
 	width: 100%;
 }
-.to_order_text{
+.to-order__text{
 	position: absolute;
 	text-align: center;
 	top: 0;
@@ -90,12 +82,12 @@
 	margin: 10% 15%;
 }
 
-.to_order_text p{
+.to-order__text p{
 	font-family: 'Oswald', sans-serif;
 	font-size: 5.3vw;
 	color: white;
 }
-.to_order_text a{
+.to-order__text a{
 	font-family: 'Oswald', sans-serif;
 	display: inline-block;
 	padding: 0.9vw 2.0vw 1.5vw 2.0vw;
@@ -107,20 +99,20 @@
 
 
 
-/*-about_me*/
+/*-about-me*/
 
 
-.about_me img{
+.about-me img{
 	width: 17%;
 	min-width: 120px;
 	float: left;
 }
 
-.about_me h1{
+.about-me h1{
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 }
 
-.about_me p{
+.about-me p{
 	text-align: justify;
 }
