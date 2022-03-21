@@ -1,0 +1,74 @@
+
+.footer{
+	width: 100%;
+	background-color: #C5E0E4;
+	margin-top: 200px;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    
+    &__info{
+        width: 200px;
+        margin: 30px 0;
+        min-width: 110px;
+    }
+    
+    
+    &__social{
+        width: 200px;
+        margin: 30px 0;
+    }
+    &__icon {
+        display: flex;
+        justify-content: space-around;
+
+
+        .instagram-footer{
+            margin: 10px;
+        }
+        .instagram-footer:before{
+            font-family: 'icomoon';
+            content: "\e902";
+            font-size: 40px;
+        }
+
+        .behance-footer{
+            margin: 10px;
+        }
+        .behance-footer:before{
+            font-family: 'icomoon';
+            content: "\e904";
+            font-size: 40px;
+        }
+    }
+
+    &__contact{
+        width: 200px;
+        margin: 30px 0;
+        min-width: 100px;
+        float: right;
+        height: 50px;
+    }
+    &__social-contact{
+        display: none;
+        flex-direction: column;
+    }
+
+    .title-footer{
+        font-size: 20px;
+    }
+    
+    .inf-footer{
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .inf-footer_mail{
+        word-wrap: break-word;
+    }
+}

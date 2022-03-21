@@ -1,0 +1,65 @@
+
+
+.menu-list {
+	z-index: 100;
+	float: left;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+
+	hr{
+		display: none;
+	}
+}
+
+.menu{
+	margin: 0 50px;
+
+
+	&__pushmenu{
+		display: none;
+		position: absolute;
+		top: 20px;
+		right: -100px;
+		width: 70px;
+		font-size: 33px;
+		cursor: pointer;
+	}
+	&__pushmenu_active{
+		opacity: 0;
+	}
+
+	&__logo{
+		width: 60%;
+		margin: 20px auto;
+		display: none;
+	}
+
+	&__link{
+		font-family: 'Oswald', sans-serif;
+		font-size: 25px;
+		display: block;
+		padding: 20px 1.5vh;
+	}
+
+	&__basket{
+		display: block;
+		float: right;
+		position: relative;
+		padding: 20px 60px 20px 0;
+	}
+	&__basket:after{
+		font-family: 'icomoon';
+		content: "\f291";
+		font-size: 25px;
+		position: absolute;
+		left: 30px;
+		bottom: 20px;
+	}
+
+	&__text_basket{
+		display: none;
+	}
+	
+}
