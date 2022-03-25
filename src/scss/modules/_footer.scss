@@ -9,6 +9,10 @@
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
+
+        @media screen and (max-width: 600px) {
+            justify-content: space-around;
+        }
     }
     
     
@@ -35,6 +39,10 @@
             font-family: 'icomoon';
             content: "\e902";
             font-size: 40px;
+
+            @media screen and (max-width: 700px) {
+                font-size: 30px;
+            }
         }
 
         .behance-footer{
@@ -44,7 +52,14 @@
             font-family: 'icomoon';
             content: "\e904";
             font-size: 40px;
+
+            @media screen and (max-width: 700px) {
+                font-size: 30px;
+            }
         }
+    }
+    &__icon-contact{
+        justify-content: left;
     }
 
     &__contact{
@@ -62,15 +77,16 @@
     .title-footer{
         font-size: 20px;
         @media screen and (max-width: 700px) {
-            font-size: 16;
+            font-size: 16px;
         }
     }
     
     .inf-footer{
         font-size: 18px;
         font-weight: 300;
+
         @media screen and (max-width: 700px) {
-            font-size: 14;
+            font-size: 14px;
         }
     }
 

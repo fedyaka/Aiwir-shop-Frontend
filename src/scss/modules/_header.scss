@@ -11,9 +11,42 @@ header{
 	display: flex;
 	justify-content: space-between;
 
+	@media(max-width: 950px){
+		background-color: white;
+		display: block;
+		position: fixed;
+		width: 250px;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		transition: 0.5s;
+		transform: translateX(-100%);
+		border-right: 1px solid #C4C4C4 ;
+	}
 
 	hr{
 		display: none;
+		
+		@media(max-width: 950px){
+			display: block;
+		}
+	}
+
+	.wrapper_basket{
+		@media(max-width: 950px){
+			display: none;
+		}
+	}
+	.menu__text_basket{
+		@media(max-width: 950px){
+			display: block;
+		}
+	}
+}
+
+.menu-list_active{
+	@media(max-width: 950px){
+		transform: translateX(0);
 	}
 }
 
@@ -30,15 +63,30 @@ header{
 		width: 70px;
 		font-size: 33px;
 		cursor: pointer;
+
+		@media(max-width: 950px){
+			display: block;
+		}
 	}
 	&__pushmenu_active{
 		opacity: 0;
+
+		@media(max-width: 950px){
+			top: 0;
+			left: 250px;
+			padding-right: 100vw;
+			padding-bottom: 100vh;
+		}
 	}
 
 	&__logo{
-		width: 60%;
+		width: 45%;
 		margin: 20px auto;
 		display: none;
+
+		@media(max-width: 950px){
+			display: block;
+		}
 	}
 
 	&__link{
@@ -46,6 +94,11 @@ header{
 		font-size: 25px;
 		display: block;
 		padding: 20px 1.5vh;
+
+		@media(max-width: 950px){
+			font-size: 20px;
+			display: block;
+		}
 	}
 
 	&__basket{

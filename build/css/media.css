@@ -6,61 +6,7 @@
 }
 
 @media(max-width: 950px){
-	/*----MOBILE MENU----*/
-	.menu__pushmenu{
-		display: block;
-	}
-	.menu__pushmenu_active{
-		top: 0;
-		left: 300px;
-		padding-right: 100vw;
-		padding-bottom: 100vh;
-	}
 
-	.menu__logo{
-		display: block;
-	}
-	.menu-list hr{
-		display: block;
-	}
-
-
-	.menu-list{
-		background-color: white;
-		display: block;
-		position: fixed;
-		width: 300px;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		transition: 0.5s;
-		transform: translateX(-100%);
-		border-right: 1px solid #C4C4C4 ;
-	}
-	.menu-list_active{
-		transform: translateX(0);
-	}
-
-	.wrapper_basket{
-		display: none;
-	}
-	.menu__text_basket{
-		display: block;
-	}
-
-
-
-	.menu-list a{
-		margin: 10px 0;
-		display: block;
-	}
-
-	.content{
-		transition: 0.5s;
-	}
-	.content_active{
-		transform: translateX(300px);
-	}
 }
 
 @media(max-width: 750px){
