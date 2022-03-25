@@ -21,6 +21,20 @@ $font-roboto: 'Roboto Condensed', sans-serif;
 	margin: auto;
 	max-width: 1300px;
 }
+.container-other{
+	position: relative;
+	width: 80%;
+	margin: auto;
+	max-width: 1300px;
+	background-color: #E7F3F5;
+
+	@media screen and (max-width: 1400px){
+		width: 90%;
+	}
+	@media screen and (max-width: 1200px){
+		width: 100%;
+	}
+}
 .main_container{
 	width: 80%;
 	margin: 0 auto;
@@ -32,20 +46,56 @@ body{
     font-family: $font-roboto;
     font-size: 24px;
     font-weight: 400;
+	@media screen and (max-width: 700px) {
+        font-size: 18px;
+    }
 }
 
-/*--slider-illustration--*/
+.title{
+	font-size: 48px;
+	font-family: $font-oswald;
+	line-height: 48px;
+	
+	@media screen and (max-width: 700px) {
+        font-size: 36px;
+    }
+}
+.subtitle{
+	font-size: 36px;
+	font-family: $font-roboto;
+	
+	@media screen and (max-width: 700px) {
+        font-size: 24px;
+    }
+}
+.text{
+	font-size: 24px;
+	font-family: $font-roboto;
+	line-height: 30px;
 
-@import "_slider-illustration";
+	@media screen and (max-width: 700px) {
+        font-size: 18px;
+    }
+}
 
 /*---- HEADER ----*/
 
-@import "_header";
-
-/*---- INDEX ----*/
-
-@import "_index";
+@import "modules/_header";
 
 /*---- FOOTER ----*/
 
-@import "_footer";
+@import "modules/_footer";
+
+/*---- INDEX ----*/
+
+@import "modules/_index";
+
+/*---- ORDER ----*/
+
+@import "modules/order";
+
+
+
+/*--goods--*/
+
+@import "modules/_goods";

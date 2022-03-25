@@ -21,48 +21,6 @@
 }
 
 
-
-/*-goods*/
-
-
-.goods{
-	display: inline-block;
-	max-height: 230px;
-	max-width: 170px;
-	margin: 10px 0;
-	padding: 7px;
-	background-color: white;
-}
-.image_goods{
-	height: 150px;
-	width: 150px;
-	margin: auto;
-	background-color: #F0F0F0;
-}
-.image_goods img{
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
-}
-.text_goods{
-	margin-left: 5%;
-	text-align: left;
-}
-.text_goods a{
-	line-height: 45px;
-}
-.text_goods hr{
-	margin-left: 2px;
-	width: 70%;
-}
-.text_goods p{
-	line-height: 30px;
-    font-size: 20px;
-    color: #EA8383;
-}
-
-
-
 /*-to-order-*/
 
 
@@ -106,6 +64,7 @@
 	width: 17%;
 	min-width: 120px;
 	float: left;
+	margin-right: 10px;
 }
 
 .about-me h1{

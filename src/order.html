@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Aiwir shop</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/slick.css">
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+	<div class="container-other">
+
+		@@include('modules_html/_header.html')
+
+		<main class="content">
+
+			<div>
+				<div class="order-title">
+					<p class="order-title__title title">Иллюстрация на заказ</p>
+					<p class="order-title__subtitle subtitle">Прайс-лист</p>
+				</div>
+			</div>
+
+			<div class="container-order-color">
+				<section class="tariff">
+					<p class="tariff__title title">Цветная иллюстрация</p>
+					<div class="tariff__row">
+						<div class="tariff__section">
+							<p class="tariff-title subtitle">Simple</p>
+							<hr>
+							<ul>
+								<li>1 персонаж</li>
+								<li>Без фона</li>
+								<li>Портрет/ по пояс/ в полный рост</li>
+							</ul>
+							<p class="tariff-price">от 1000 руб.</p>
+							<a class="tariff-btn" href="#simple-color">Подробнее</a>
+						</div>
+						<div class="tariff__section">
+							<p class="tariff-title subtitle">Medium</p>
+							<hr>
+							<ul>
+								<li>1-3 персонаж</li>
+								<li>Недетальный фон</li>
+								<li>Портрет/ по пояс/ в полный рост</li>
+							</ul>
+							<p class="tariff-price">от 2000 руб.</p>
+							<a class="tariff-btn" href="#medium-color">Подробнее</a>
+						</div>
+						<div class="tariff__section">
+							<p class="tariff-title subtitle">Premium</p>
+							<hr>
+							<ul>
+								<li>3-5 персонаж</li>
+								<li>Проработанный фон</li>
+								<li>Портрет/ по пояс/ в полный рост</li>
+							</ul>
+							<p class="tariff-price">от 3500 руб.</p>
+							<a class="tariff-btn" href="#premium-color">Подробнее</a>
+						</div>
+					</div>
+
+				</section>
+				<section class="description">
+					<div class="description__left" id="simple-color">
+						<p class="description-title subtitle">Simple</p>
+						<ul>
+							Тариф включает в себя:
+							<li>одного персонажа (человек/животное/предмет) любой сложности, в любой позе;</li>
+							<li>простой фон в виде заливки одним цветом либо градиентом;</li>
+						</ul>
+						<br>
+						<p>
+							Портрет - 1000 рублей<br>
+							По пояс - 1500 рублей<br>
+							В полный рост - 2000 рублей
+						</p>
+					</div>
+					<div class="description__right" id="medium-color">
+						<p class="description-title subtitle">Medium</p>
+						<ul>
+							Тариф включает в себя:
+							<li>от одного до трех персонажей (человек/животное/предмет) любой сложности, в любой позе;</li>
+							<li>фон в виде простого непроработанного пейзажа/интерьера; </li>
+						</ul>
+						<br>
+						<p>
+							Портрет - 2000 рублей<br>
+							По пояс - 2500 рублей<br>
+							В полный рост - 3000 рублей
+						</p>
+					</div>
+					<div class="description__left" id="premium-color">
+						<p class="description-title subtitle">Premium</p>
+						<ul>
+							Тариф включает в себя:
+							<li>от одного до пяти персонажей (человек/животное/предмет) любой сложности, в любой позе;</li>
+							<li>фон в виде полноценного проработанного пейзажа/интерьера;</li>
+						</ul>
+						<br>
+						<p>
+							Портрет - 3500 рублей<br>
+							По пояс - 4000 рублей<br>
+							В полный рост - 4500 рублей
+						</p>
+					</div>
+
+					<p class="description-end subtitle">Если ни один тариф Вам не подходит частично или полностью, вы
+						можете заполнить <a href="#form-order-id">анкету</a>, где необходимо кратко описать все Ваши пожелания.</p>
+
+				</section>
+
+				<section class="illustration-examples">
+					<p class="title">Примеры иллюстраций</p>
+					<div class="illustration-examples__wrapper">
+						<div class="slider-illustration-examples">
+							<div class="slider-illustration-examples__inner">
+								<div class="slider-illustration-examples__item">
+									<img src="img/to_order.png" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/21j06LDOo-Q.jpg" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/4d-c19Rg6k8.jpg" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/6eZreHACwRc.jpg" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/goods.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+
+			<div class="container-order-bw">
+				<section class="tariff">
+					<p class="tariff__title title">Черно-белая<br>иллюстрация</p>
+					<div class="tariff__row">
+						<div class="tariff__section">
+							<p class="tariff-title subtitle">Simple</p>
+							<hr>
+							<ul class="ul-bw">
+								<li>1 персонаж</li>
+								<li>Лайнарт</li>
+								<li>Без фона</li>
+								<li>Портрет/ по пояс/ в полный рост</li>
+							</ul>
+							<p class="tariff-price">от 1000 руб.</p>
+							<a class="tariff-btn" href="#simple-bw">Подробнее</a>
+						</div>
+						<div class="tariff__section">
+							<p class="tariff-title subtitle">Medium</p>
+							<hr>
+							<ul class="ul-bw">
+								<li>1-3 персонаж</li>
+								<li>Лайнарт + тоновая заливка</li>
+								<li>Недетальный фон</li>
+								<li>Портрет/ по пояс/ в полный рост</li>
+							</ul>
+							<p class="tariff-price">от 2000 руб.</p>
+							<a class="tariff-btn" href="#medium-bw">Подробнее</a>
+						</div>
+						<div class="tariff__section">
+							<p class="tariff-title subtitle">Premium</p>
+							<hr>
+							<ul class="ul-bw">
+								<li>3-5 персонаж</li>
+								<li>Лайнарт + проработанный тон</li>
+								<li>Проработанный фон</li>
+								<li>Портрет/ по пояс/ в полный рост</li>
+							</ul>
+							<p class="tariff-price">от 3500 руб.</p>
+							<a class="tariff-btn" href="#premium-bw">Подробнее</a>
+						</div>
+					</div>
+
+				</section>
+				<section class="description">
+					<div class="description__left" id="simple-bw">
+						<p class="description-title subtitle">Simple</p>
+						<ul>
+							Тариф включает в себя:
+							<li>одного персонажа (человек/животное/предмет) любой сложности, в любой позе;</li>
+							<li>лайнарт (чистовой контур) персонажа без тона;</li>
+							<li>простой фон в виде заливки одним цветом либо градиентом;</li>
+						</ul>
+						<br>
+						<p>
+							Портрет - 700 рублей<br>
+							По пояс - 1000 рублей<br>
+							В полный рост - 1200 рублей
+						</p>
+					</div>
+					<div class="description__right" id="medium-bw">
+						<p class="description-title subtitle">Medium</p>
+						<ul>
+							Тариф включает в себя:
+							<li>от одного до трех персонажей (человек/животное/предмет) любой сложности, в любой позе;</li>
+							<li>лайнарт (чистовой контур) + тоновые заливки;</li>
+							<li>фон в виде простого непроработанного пейзажа/интерьера;</li>
+						</ul>
+						<br>
+						<p>
+							Портрет - 1200 рублей<br>
+							По пояс - 1500 рублей<br>
+							В полный рост - 1700 рублей
+						</p>
+					</div>
+					<div class="description__left" id="premium-bw">
+						<p class="description-title subtitle">Premium</p>
+						<ul>
+							Тариф включает в себя:
+							<li>от одного до пяти персонажей (человек/животное/предмет) любой сложности, в любой позе;</li>
+							<li>лайнарт + полная тоновая проработка (светотень);</li>
+							<li>фон в виде полноценного проработанного пейзажа/интерьера;</li>
+						</ul>
+						<br>
+						<p>
+							Портрет - 1800 рублей<br>
+							По пояс - 2000 рублей<br>
+							В полный рост - 2200 рублей
+						</p>
+					</div>
+
+					<p class="description-end subtitle">Если ни один тариф Вам не подходит частично или полностью, вы
+						можете заполнить <a href="#form-order-id">анкету</a>, где необходимо кратко описать все Ваши пожелания.</p>
+
+				</section>
+
+				<section class="illustration-examples">
+					<p class="title">Примеры иллюстраций</p>
+					<div class="illustration-examples__wrapper">
+						<div class="slider-illustration-examples">
+							<div class="slider-illustration-examples__inner">
+								<div class="slider-illustration-examples__item">
+									<img src="img/to_order.png" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/21j06LDOo-Q.jpg" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/4d-c19Rg6k8.jpg" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/6eZreHACwRc.jpg" alt="">
+								</div>
+								<div class="slider-illustration-examples__item">
+									<img src="img/goods.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="form-order" id="form-order-id">
+					<p class="subtitle">Для заказа заполните пожалуйста анкету ниже.</p>
+					<form action="#">
+						<input type="text" name="name" placeholder=" Введите ваше ФИО">
+						<input type="text" name="purpose" placeholder=" Для каких целей">
+						<div><textarea name="" name="description" id="" placeholder=" Кратко опишите ваши пожелания и более подходящий тариф"></textarea></div>
+						<input type="text" placeholder=" Введите вашу электронную почту">
+						<button type="submit" form="">Оформить заказ</button>
+					</form>
+				</section>
+			</div>
+
+		</main>
+
+		@@include('modules_html/_footer.html')
+
+
+	</div>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="js/slick.min.js"></script>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
