@@ -41,9 +41,7 @@ $font-roboto: 'Roboto Condensed', sans-serif;
 }
 
 .content{
-	@media(max-width: 950px){
-		transition: 0.5s;
-	}
+	transition: 0.5s;
 }
 .content_active{
 	@media(max-width: 950px){
@@ -56,14 +54,17 @@ body{
     font-family: $font-roboto;
     font-size: 24px;
     font-weight: 400;
+	
 	@media screen and (max-width: 700px) {
         font-size: 18px;
     }
 }
 
+/*---fonts---*/
 .title{
 	font-size: 48px;
 	font-family: $font-oswald;
+	font-weight: 400;
 	line-height: 48px;
 	text-align: center;
 	
@@ -83,7 +84,6 @@ body{
 .text{
 	font-size: 24px;
 	font-family: $font-roboto;
-	line-height: 30px;
 
 	@media screen and (max-width: 700px) {
         font-size: 18px;
@@ -104,7 +104,11 @@ body{
 
 /*---- ORDER ----*/
 
-@import "modules/order";
+@import "modules/_order";
+
+/*---- FAQ ----*/
+
+@import "modules/_faq";
 
 
 /*--goods--*/

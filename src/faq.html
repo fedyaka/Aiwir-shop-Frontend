@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Aiwir shop</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/slick.css">
+
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+	<div class="container-other">
+
+		@@include('modules_html/_header.html')
+
+		<main class="content">
+			<p class="faq-title subtitle">Информация обо мне</p>
+			<section class="faq-about-me">
+				<div class="faq-about-me__wrapper">
+					<div>
+						<img src="img/logo.png" alt="">
+						<p class="faq-about-me__subtitle subtitle">Aiwir</p>
+						<br>
+						<p class="text">Меня зовут Алина и я книжный иллюстратор и дизайнер, базирующийся в Москве,
+							Россия. Для создания своих работ я использую графический планшет и различные графические
+							программы, такие как Clip Studio Paint, Adobe Illustrator и Figma. </p>
+					</div>
+					<p class="faq-about-me__subtext text">Я продаю не только печатную продукцию, например, открытки,
+						буклеты и т.д., но и рисую иллюстрации на заказ. В моем исполнении Вы можете получить обложку и
+						иллюстрации для книг, небольшие комиксы, а также отдельные одиночные картинки.</p>
+				</div>
+			</section>
+			<section class="faq-contact">
+				<div class="faq-contact__wrapper">
+					<div class="faq-contact__portfolio">
+						<p class="faq-contact__title">Мое портфолио:</p>
+						<div class="faq-contact__icon">
+							<a href="#" class="faq-contact__instagram"></a>
+							<a href="#" class="faq-contact__behance"></a>
+						</div>
+					</div>
+					<div class="faq-contact__mail">
+						<p class="faq-contact__title">По любым вопросам:</p>
+						<p>aiwir.malenfant@gmail.com</p>
+					</div>
+				</div>
+			</section>
+			<section class="faq">
+				<p class="faq__title title">F.A.Q.</p>
+				<ul class="faq__question">
+					<li>Когда будет доставлен мой заказ?</li>
+					<li>Получу ли я трек-номер моей посылки?</li>
+					<li>Как долго обрабатывается мой заказ?</li>
+					<li>Где найти информацию по моему заказу?</li>
+				</ul>
+
+				<ul class="faq__answer">
+					<li>Ваш заказ будет доставлен в течении 21 дня с момента обработки Вашей покупки (уведомление придет
+						на электронную почту).</li>
+					<li>Да, он будет выслан на вашу электронную почту.</li>
+					<li>Заказ обрабатывается в течении 7 дней.</li>
+					<li>Вся информация вместе с трек-номером посылки будет выслана на электронную почту, которая была
+						указана при покупке.</li>
+				</ul>
+			</section>
+		</main>
+
+		@@include('modules_html/_footer.html')
+
+
+	</div>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="js/slick.min.js"></script>
+
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>

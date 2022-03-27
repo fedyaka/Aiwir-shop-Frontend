@@ -35,6 +35,12 @@ ul {
   margin: 0 auto;
 }
 
+.content {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body {
   overflow-x: hidden;
   font-family: "Roboto Condensed", sans-serif;
@@ -42,9 +48,12 @@ body {
   font-weight: 400;
 }
 
+/*---fonts---*/
+
 .title {
   font-size: 48px;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   line-height: 48px;
   text-align: center;
 }
@@ -58,7 +67,6 @@ body {
 .text {
   font-size: 24px;
   font-family: "Roboto Condensed", sans-serif;
-  line-height: 30px;
 }
 
 /*---- HEADER ----*/
@@ -348,11 +356,6 @@ header {
   min-width: 120px;
   float: left;
   margin-right: 10px;
-}
-
-.about-me h1 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
 }
 
 .about-me p {
@@ -650,6 +653,126 @@ header {
   margin-left: 10px;
 }
 
+/*---- FAQ ----*/
+
+.faq-title {
+  margin-top: 190px;
+}
+
+.faq-about-me {
+  width: 100%;
+  background-color: white;
+}
+
+.faq-about-me__wrapper {
+  max-width: 900px;
+  margin: 15px auto 0 auto;
+  padding: 55px 10px 125px 10px;
+  text-align: justify;
+}
+
+.faq-about-me__wrapper img {
+  max-width: 150px;
+  float: left;
+  margin-right: 3vw;
+}
+
+.faq-about-me__subtitle {
+  text-align: left;
+}
+
+.faq-about-me__subtext {
+  margin-top: 125px;
+}
+
+.faq-contact {
+  width: 100%;
+  margin-top: 60px;
+  background-color: white;
+}
+
+.faq-contact__wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 55px 10px;
+}
+
+.faq-contact p {
+  font-size: 32px;
+}
+
+.faq-contact__portfolio {
+  margin-bottom: 56px;
+}
+
+.faq-contact__mail p {
+  display: inline;
+}
+
+.faq-contact__title {
+  margin-right: 20px;
+  display: inline;
+}
+
+.faq-contact__icon {
+  position: relative;
+  display: inline;
+}
+
+.faq-contact__icon .faq-contact__instagram {
+  position: absolute;
+  bottom: -50%;
+}
+
+.faq-contact__icon .faq-contact__instagram:before {
+  font-family: "icomoon";
+  content: "\e902";
+  font-size: 50px;
+}
+
+.faq-contact__icon .faq-contact__behance {
+  position: absolute;
+  bottom: -50%;
+  margin-left: 100px;
+}
+
+.faq-contact__icon .faq-contact__behance:before {
+  font-family: "icomoon";
+  content: "\e904";
+  font-size: 50px;
+}
+
+.faq {
+  max-width: 832px;
+  margin: 170px auto 0 auto;
+}
+
+.faq__title {
+  margin-left: 70px;
+  text-align: left;
+  margin-bottom: 45px;
+}
+
+.faq ul {
+  list-style: decimal;
+}
+
+.faq ul li {
+  margin-left: 35px;
+}
+
+.faq__question {
+  margin-bottom: 100px;
+}
+
+.faq__question li {
+  margin-bottom: 5px;
+}
+
+.faq__answer li {
+  margin-bottom: 25px;
+}
+
 /*--goods--*/
 
 .goods {
@@ -716,12 +839,6 @@ header {
 }
 
 @media (max-width: 950px) {
-  .content {
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-  }
-
   .content_active {
     -webkit-transform: translateX(250px);
         -ms-transform: translateX(250px);
@@ -849,6 +966,51 @@ header {
     width: 90%;
     padding: 20px;
   }
+
+  .faq-title {
+    margin-top: 130px;
+  }
+
+  .faq-about-me__wrapper {
+    padding-bottom: 80px;
+  }
+
+  .faq-about-me__wrapper img {
+    max-width: 100px;
+  }
+
+  .faq-about-me__subtext {
+    margin-top: 80px;
+  }
+
+  .faq-contact__wrapper {
+    max-width: 370px;
+  }
+
+  .faq-contact p {
+    font-size: 26px;
+  }
+
+  .faq {
+    max-width: 600px;
+    margin-top: 130px;
+  }
+
+  .faq__title {
+    margin-bottom: 30px;
+  }
+
+  .faq ul li {
+    margin-left: 28px;
+  }
+
+  .faq__question {
+    margin-bottom: 60px;
+  }
+
+  .faq__answer li {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -882,6 +1044,26 @@ header {
 @media screen and (max-width: 500px) {
   .form-order form div {
     height: 200px;
+  }
+
+  .faq-about-me__wrapper {
+    padding-bottom: 50px;
+  }
+
+  .faq-about-me__subtext {
+    margin-top: 50px;
+  }
+
+  .faq-contact__wrapper {
+    max-width: 330px;
+  }
+
+  .faq-contact__title {
+    margin-right: 10px;
+  }
+
+  .faq-contact__icon .faq-contact__behance {
+    margin-left: 60px;
   }
 }
 
