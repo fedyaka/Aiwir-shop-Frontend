@@ -699,14 +699,15 @@ header {
 
 .faq-contact p {
   font-size: 32px;
+  display: inline;
 }
 
 .faq-contact__portfolio {
   margin-bottom: 56px;
 }
 
-.faq-contact__mail p {
-  display: inline;
+.faq-contact__portfolio p {
+  margin-right: 50px;
 }
 
 .faq-contact__title {
@@ -715,8 +716,8 @@ header {
 }
 
 .faq-contact__icon {
-  position: relative;
   display: inline;
+  position: relative;
 }
 
 .faq-contact__icon .faq-contact__instagram {
@@ -1058,12 +1059,18 @@ header {
     max-width: 330px;
   }
 
+  .faq-contact__portfolio {
+    margin-bottom: 120px;
+    display: block;
+  }
+
   .faq-contact__title {
     margin-right: 10px;
   }
 
-  .faq-contact__icon .faq-contact__behance {
-    margin-left: 60px;
+  .faq-contact__icon {
+    margin-top: 70px;
+    display: block;
   }
 }
 

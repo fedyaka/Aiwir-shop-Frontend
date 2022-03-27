@@ -71,6 +71,7 @@
 
     p{
         font-size: 32px;
+        display: inline;
 
         @media screen and (max-width: 700px) {
             font-size: 26px;
@@ -79,13 +80,17 @@
 
     &__portfolio{
         margin-bottom: 56px;
-    }
 
-    &__mail{
+        @media screen and (max-width: 500px) {
+            margin-bottom: 120px;
+            display: block;
+        }
+
         p{
-            display: inline;
+            margin-right: 50px;
         }
     }
+
 
     &__title{
         margin-right: 20px;
@@ -96,8 +101,13 @@
     }
 
     &__icon{
-        position: relative;
         display: inline;
+        position: relative;
+        
+        @media screen and (max-width: 500px) {
+            margin-top: 70px;
+            display: block;
+        }
 
         .faq-contact__instagram{
             position: absolute;
@@ -115,9 +125,9 @@
             bottom: -50%;
             margin-left: 100px;
 
-            @media screen and (max-width: 500px) {
-                margin-left: 60px;
-            }
+            // @media screen and (max-width: 500px) {
+            //     margin-left: 60px;
+            // }
         }
         .faq-contact__behance:before{
             font-family: 'icomoon';
