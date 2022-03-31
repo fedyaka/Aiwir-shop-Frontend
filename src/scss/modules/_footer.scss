@@ -12,6 +12,8 @@
 
         @media screen and (max-width: 600px) {
             justify-content: space-around;
+            width: 100%;
+		    padding: 0 10px;
         }
     }
     
@@ -26,6 +28,10 @@
     &__social{
         width: 200px;
         margin: 30px 0;
+
+        @media(max-width: 750px){
+            display: none;
+        }
     }
     &__icon {
         display: flex;
@@ -72,6 +78,10 @@
     &__social-contact{
         display: none;
         flex-direction: column;
+        
+        @media(max-width: 750px){
+            display: flex;
+        }
     }
 
     .title-footer{

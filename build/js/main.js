@@ -1,5 +1,7 @@
+var cart = {}; //Корзина
+
 $('document').ready(function(){
-	// sliders
+	// Слайдер
 	$('.slider-illustration__inner').slick({
 		lazyLoad: 'ondemand',
 		prevArrow: '<button type="button" class="slick-prev-ill slick-btn-ill"><span class="icon-caret-left icon-ill"></span></button>',
@@ -14,7 +16,7 @@ $('document').ready(function(){
 
 
 
-	// responsive menu
+	// Отзывчивое меню
 	$('.menu__pushmenu').on('click', function() {
 		$('.menu__pushmenu').toggleClass('menu__pushmenu_active');
 		$('.menu-list').toggleClass('menu-list_active');
@@ -22,5 +24,24 @@ $('document').ready(function(){
 		$('.content').toggleClass('content_active');
 	});
 
-	// number of items in the cart
+	// Колличество товара в мини-корзине
+	checkCart();
+	showCountGoodsCart();
 });
+
+function checkCart(){
+	//Проверка наличия корзины в localStorage
+	var localCart = localStorage.getItem('cart');
+	if (localCart != null){
+		cart = JSON.parse(localCart);
+	}
+}
+
+function showCountGoodsCart(){
+	//Вывод колличества товара в шапке
+	var out = 0;
+	for (var key in cart){
+		out += cart[key];
+	}
+	$('.menu__basket').html(out);
+}

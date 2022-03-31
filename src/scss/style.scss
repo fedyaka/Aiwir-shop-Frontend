@@ -18,12 +18,23 @@ $font-roboto: 'Roboto Condensed', sans-serif;
 .container{
 	position: relative;
 	width: 80%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 	margin: auto;
 	max-width: 1300px;
+
+	@media(max-width: 1300px){
+		width: 100%;
+	}
+	
 }
 .container-other{
 	position: relative;
 	width: 80%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 	margin: auto;
 	max-width: 1300px;
 	background-color: #E7F3F5;
@@ -38,6 +49,10 @@ $font-roboto: 'Roboto Condensed', sans-serif;
 .main_container{
 	width: 80%;
 	margin: 0 auto;
+
+	@media(max-width: 600px){
+		width: 100%;
+	}
 }
 
 .content{
@@ -48,8 +63,9 @@ $font-roboto: 'Roboto Condensed', sans-serif;
 		transform: translateX(250px);
 	}
 }
-
+html,
 body{
+	height: 100%;
 	overflow-x: hidden;
     font-family: $font-roboto;
     font-size: 24px;
@@ -60,7 +76,14 @@ body{
     }
 }
 
+main{
+	flex: 1 1 auto;
+}
+
+
+
 /*---fonts---*/
+
 .title{
 	font-size: 48px;
 	font-family: $font-oswald;
@@ -114,7 +137,10 @@ body{
 
 @import "modules/_shop";
 
+/*---- BASKET ----*/
+
+@import "modules/basket";
 
 /*---- GOODS-DESCRIPTION ----*/
 
-@import "modules/_goods";
+@import "modules/_goods-desc";
