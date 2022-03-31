@@ -56,49 +56,19 @@
 				<p class="top-goods__title">Топ товары</p>
 				<div class="top-goods__row">
 
-					<div class="goods">
-						<a href="">
-							<div class="image_goods"><img src="img/21j06LDOo-Q.jpg" alt=""></div>
+					<!-- Шаблон товара -->
+					<!-- <div class="goods">
+						<a href="goods.html">
+							<div class="goods__image"><img src="img/21j06LDOo-Q.jpg" alt=""></div>
 						</a>
-						<div class="text_goods">
-							<a href="">Название</a>
+						<div class="goods__text">
+							<a href="goods.html">Название</a>
 							<hr>
 							<p>300руб</p>
 						</div>
-					</div>
+					</div> -->
 
-					<div class="goods">
-						<a href="">
-							<div class="image_goods"><img src="img/4d-c19Rg6k8.jpg" alt=""></div>
-						</a>
-						<div class="text_goods">
-							<a href="">Название</a>
-							<hr>
-							<p>300руб</p>
-						</div>
-					</div>
-
-					<div class="goods">
-						<a href="">
-							<div class="image_goods"><img src="img/6eZreHACwRc.jpg" alt=""></div>
-						</a>
-						<div class="text_goods">
-							<a href="">Название</a>
-							<hr>
-							<p>300руб</p>
-						</div>
-					</div>
-
-					<div class="goods">
-						<a href="">
-							<div class="image_goods"><img src="img/4d-c19Rg6k8.jpg" alt=""></div>
-						</a>
-						<div class="text_goods">
-							<a href="">Название</a>
-							<hr>
-							<p>300руб</p>
-						</div>
-					</div>
+					<!-- товары вставляются из JSON файла -->
 
 				</div>
 			</section>
@@ -112,7 +82,7 @@
 					<div class="to-order__text">
 						<p>Иллюстрация</p>
 						<p>на заказ</p>
-						<a href="">Заказать</a>
+						<a href="order.html">Заказать</a>
 					</div>
 				</section>
 
@@ -129,14 +99,18 @@
 				</section>
 
 			</div>
+
+
 		</main>
 
 		@@include('modules_html/_footer.html')
 
+	</div>
 
 
-
-
+	<div id="goods-desc" class="modal-container">
+		
+	</div>
 
 
 
@@ -145,6 +119,7 @@
 	<script src="js/slick.min.js"></script>
 
 	<script src="js/main.min.js"></script>
+	<script src="js/topGoods.min.js"></script>
 </body>
 
 </html>

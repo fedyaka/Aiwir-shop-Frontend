@@ -18,6 +18,7 @@ let path={
     css: source_folder + "/scss/css/*.css",
     js: [source_folder + "/js/**/*.js", "!" + source_folder + "/js/**/*.min.js"],
     js_min: source_folder + "/js/**/*.min.js",
+    json: source_folder + "/js/**/*.json",
     img: source_folder + "/img/**/*",
     fonts: source_folder + "/fonts/*"
   },
@@ -102,7 +103,11 @@ function jsBuild(){
       extname: ".min.js"
     }))
     .pipe(dest(path.build.js))
+
     .pipe(src(path.src.js_min))
+    .pipe(dest(path.build.js))
+
+    .pipe(src(path.src.json))
     .pipe(dest(path.build.js))
     .pipe(browser_sync.stream())
 }

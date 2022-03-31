@@ -1,35 +1,73 @@
-.goods{
-	display: inline-block;
-	max-height: 230px;
-	max-width: 170px;
-	margin: 10px 0;
-	padding: 7px;
-	background-color: white;
+.modal-container{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-.image_goods{
-	height: 150px;
-	width: 150px;
-	margin: auto;
-	background-color: #F0F0F0;
+.modal-container:target{
+    visibility: visible;
+    opacity: 1;
 }
-.image_goods img{
-	object-fit: cover;
-	height: 100%;
-	width: 100%;
+.modal-close{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
-.text_goods{
-	margin-left: 5%;
-	text-align: left;
-}
-.text_goods a{
-	line-height: 45px;
-}
-.text_goods hr{
-	margin-left: 2px;
-	width: 70%;
-}
-.text_goods p{
-	line-height: 30px;
-    font-size: 20px;
-    color: #EA8383;
+
+.goods-desc{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    max-width: 1000px;
+    padding: 49px;
+    background-color: #fff;
+
+    @media screen and (max-width:1000px) {
+        padding: 5vw;
+    }
+
+    &__image-wrap{
+        width: 43vw;
+        max-width: 450px;
+        height: 45vw;
+        max-height: 450px;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__desc{
+        position: relative;
+        width: 40vw;
+        max-width: 400px;
+        height: 45vw;
+        max-height: 450px;
+    }
+
+    &__price{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    &__add-to-cart{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
