@@ -858,16 +858,14 @@ header {
 
 .cart {
   width: 100%;
-  max-height: 900px;
   max-width: 970px;
   padding: 40px;
   margin: 100px auto;
   background-color: white;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .cart__goods-cart {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,6 +883,7 @@ header {
   max-height: 190px;
   width: 190px;
   max-width: 190px;
+  min-height: 110px;
 }
 
 .cart__img-wrap img {
@@ -902,10 +901,12 @@ header {
   max-width: 600px;
   height: 20vw;
   max-height: 190px;
+  min-height: 110px;
 }
 
 .cart__name {
   text-align: left;
+  font-size: 30px;
 }
 
 .cart__count {
@@ -916,10 +917,17 @@ header {
 
 .cart__trash:before {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   font-family: "icomoon";
   content: "\e900";
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.cart__trash:hover {
+  color: #fc5656;
 }
 
 .payment {
@@ -935,11 +943,23 @@ header {
           justify-content: space-between;
 }
 
+.payment p {
+  text-align: left;
+}
+
 .payment button {
   background-color: #BAE4EB;
   border: none;
   font-size: 40px;
   padding: 10px 60px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.payment button:hover {
+  background-color: #96ddeb;
 }
 
 /*---- GOODS-DESCRIPTION ----*/
@@ -1139,6 +1159,7 @@ header {
 @media screen and (max-width: 970px) {
   .cart {
     padding: 40px 5vw;
+    padding-bottom: 15px;
   }
 
   .cart__goods-cart {
@@ -1148,6 +1169,15 @@ header {
   .cart__img-wrap {
     height: 20vw;
     width: 20vw;
+  }
+
+  .payment {
+    padding: 10px 40px;
+  }
+
+  .payment button {
+    font-size: 30px;
+    padding: 10px 40px;
   }
 }
 
@@ -1338,6 +1368,10 @@ header {
     margin-bottom: 20px;
   }
 
+  .cart__name {
+    font-size: 24px;
+  }
+
   .goods-desc__price {
     line-height: 40px;
   }
@@ -1371,14 +1405,21 @@ header {
     padding: 0 10px;
   }
 
+  .cart__goods-cart {
+    margin-bottom: 25px;
+  }
+
   .cart__img-wrap {
     height: 30vw;
+    max-width: 150px;
+    max-height: 150px;
     width: 30vw;
   }
 
   .cart__text-wrap {
     height: 30vw;
     width: 50vw;
+    max-height: 150px;
   }
 
   .goods-desc {
@@ -1463,6 +1504,15 @@ header {
     margin-top: 70px;
     display: block;
   }
+
+  .payment {
+    padding: 10px 20px;
+  }
+
+  .payment button {
+    font-size: 24px;
+    padding: 10px 30px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -1484,5 +1534,25 @@ header {
   .form-order form {
     width: 96%;
     padding: 15px;
+  }
+
+  .cart {
+    padding: 40px 10px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+  }
+
+  .cart__name {
+    font-size: 20px;
+  }
+
+  .cart__count {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .payment {
+    padding: 10px 10px;
   }
 }

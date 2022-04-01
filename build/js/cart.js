@@ -14,10 +14,11 @@ function loadCart(){
             outGoods += '</div>';
 
             outGoods += '<div class="cart__text-wrap">';
-            outGoods += '<p class="cart__name subtitle">' + data[key].name + '</p>';
-            outGoods += '<p class="cart__count text">Цена за шт: ' + data[key].cost + ' руб.<br><br>Количество: ' + cart[key] + 'шт.</p>';
-            outGoods += '<a href="#" class="del-goods" data-art="' + key + '"><span class="cart__trash"></span></a>';
+            outGoods += '<p class="cart__name">' + data[key].name + '</p>';
+            outGoods += '<p class="cart__count text">Цена: ' + data[key].cost + ' руб.<br>Количество: ' + cart[key] + 'шт.</p>';
             outGoods += '</div>';
+
+            outGoods += '<a href="#" class="del-goods" data-art="' + key + '"><span class="cart__trash"></span></a>';
 
             outGoods += '</div>';
 
