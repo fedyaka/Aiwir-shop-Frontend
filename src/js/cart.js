@@ -15,7 +15,8 @@ function loadCart(){
 
             outGoods += '<div class="cart__text-wrap">';
             outGoods += '<p class="cart__name">' + data[key].name + '</p>';
-            outGoods += '<p class="cart__count text">Цена: ' + data[key].cost + ' руб.<br>Количество: ' + cart[key] + 'шт.</p>';
+            outGoods += '<p class="cart__count text">Цена: ' + data[key].cost + ' руб.<br>Количество:</p>';
+            outGoods += '<div class="cart__count-button">' +'<button class="minus" data-art="' + key + '">-</button>' + cart[key] + '<button class="plus" data-art="' + key + '">+</button>' + '</div>'
             outGoods += '</div>';
 
             outGoods += '<a href="#" class="del-goods" data-art="' + key + '"><span class="cart__trash"></span></a>';
@@ -26,18 +27,43 @@ function loadCart(){
         }
         if (outGoods == ''){
             outGoods+= 'Корзина пуста';
+            $('.cart-wrap').html('');
             $('.cart-null').html(outGoods);
         } else{
-            $('.cart').html(outGoods);
+            $('.cart-wrap').html(outGoods);
+            $('.cart-null').html('');
         }
         outTotalSum += ' руб.'
 
         $('.payment__total-sum').html(outTotalSum);
 
         $('.del-goods').on('click', deleteGoods);
+        $('.plus').on('click', plusGoods);
+        $('.minus').on('click', minusGoods);
     });
-}
- 
-function deleteGoods(){
-    var articul = $(this).attr('data-art');
+
+    function deleteGoods(){
+        var articul = $(this).attr('data-art');
+        delete cart[articul];
+        localStorage.setItem('cart', JSON.stringify(cart));
+        showCountGoodsCart();
+        loadCart();
+    }
+
+    function plusGoods(){
+        var articul = $(this).attr('data-art');
+        cart[articul]++;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        showCountGoodsCart();
+        loadCart();
+    }
+    function minusGoods(){
+        var articul = $(this).attr('data-art');
+        if (cart[articul] > 1){
+            cart[articul]--;
+        }
+        localStorage.setItem('cart', JSON.stringify(cart));
+        showCountGoodsCart();
+        loadCart();
+    }
 }

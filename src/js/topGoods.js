@@ -68,6 +68,9 @@ function addToCart(){
 	} else {
 		cart[articul] = 1;
 	}
+	setLocalStorage();
+}
+function setLocalStorage(){
 	localStorage.setItem('cart', JSON.stringify(cart));
 	showCountGoodsCart();
 }
