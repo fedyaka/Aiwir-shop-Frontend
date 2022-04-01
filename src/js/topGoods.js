@@ -34,17 +34,23 @@ function openDesc(){
 		for(var key in data){
 			if (key == articul){
 				out += '<a href="##" class="modal-close"></a>';
+
 				out += '<section class="goods-desc">';
+
 				out += '<div class="goods-desc__image-wrap">';
 				out += '<img src="' + data[key].image + '" alt="">';
 				out += '</div>';
+
 				out += '<div class="goods-desc__desc">';
-				out += '<p class="subtitle">' + data[key].name + '</p>';
+				out += '<p class="goods-desc__title subtitle">' + data[key].name + '</p>';
 				out += '<hr>';
-				out += '<p class="text">' + data[key].description + '</p>';
-				out += '<p class="goods-desc__price">' + data[key].cost + '</p>';
+				out += '<p class="goods-desc__text text">' + data[key].description + '</p>';
+				out += '<p class="goods-desc__price">' + data[key].cost + ' руб.</p>';
 				out += '<button class="goods-desc__add-to-cart" data-art="'+ key+ '">В корзину</button>';
 				out += '</div>';
+
+				out += '<a href="##" class="goods-desc__close">X</a>'
+
 				out += '</section>';
 				break;
 			}

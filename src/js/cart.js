@@ -32,5 +32,11 @@ function loadCart(){
         outTotalSum += ' руб.'
 
         $('.payment__total-sum').html(outTotalSum);
+
+        $('.del-goods').on('click', deleteGoods);
     });
+}
+ 
+function deleteGoods(){
+    var articul = $(this).attr('data-art');
 }

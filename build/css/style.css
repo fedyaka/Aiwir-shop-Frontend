@@ -987,12 +987,14 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   max-width: 1000px;
   padding: 49px;
+  z-index: 99;
   background-color: #fff;
 }
 
@@ -1020,16 +1022,66 @@ header {
   max-height: 450px;
 }
 
+.goods-desc__title {
+  text-align: left;
+  line-height: 40px;
+}
+
+.goods-desc hr {
+  margin-bottom: 10px;
+}
+
+.goods-desc__text {
+  padding-bottom: 50px;
+}
+
 .goods-desc__price {
   position: absolute;
   left: 0;
   bottom: 0;
+  color: #ea8383;
+  line-height: 50px;
 }
 
 .goods-desc__add-to-cart {
   position: absolute;
   right: 0;
   bottom: 0;
+  padding: 10px 25px;
+  border: none;
+  background-color: #BAE4EB;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.goods-desc__add-to-cart:hover {
+  background-color: #96ddeb;
+}
+
+.goods-desc__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  border-radius: 100%;
+  padding: 10px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #fff;
+}
+
+.goods-desc__close:hover {
+  background-color: #dfdfdf;
+}
+
+.goods-desc__close:active {
+  background-color: #727272;
 }
 
 @media (min-width: 1300px) {
@@ -1285,6 +1337,10 @@ header {
   .faq__answer li {
     margin-bottom: 20px;
   }
+
+  .goods-desc__price {
+    line-height: 40px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1323,6 +1379,36 @@ header {
   .cart__text-wrap {
     height: 30vw;
     width: 50vw;
+  }
+
+  .goods-desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 400px;
+    padding: 25px;
+  }
+
+  .goods-desc__image-wrap {
+    width: 350px;
+    height: 350px;
+  }
+
+  .goods-desc__desc {
+    height: 250px;
+    width: 100%;
+  }
+
+  .goods-desc__title {
+    padding-top: 20px;
+  }
+
+  .goods-desc__text {
+    font-size: 16px;
   }
 }
 
@@ -1376,6 +1462,21 @@ header {
   .faq-contact__icon {
     margin-top: 70px;
     display: block;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .goods-desc {
+    max-width: 300px;
+  }
+
+  .goods-desc__image-wrap {
+    width: 250px;
+    height: 250px;
+  }
+
+  .goods-desc__desc {
+    height: 250px;
   }
 }
 
