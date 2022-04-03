@@ -854,6 +854,20 @@ header {
   margin-bottom: 60px;
 }
 
+.shop {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 /*---- BASKET ----*/
 
 .cart {
@@ -1096,6 +1110,10 @@ header {
 
 .goods-desc__add-to-cart:hover {
   background-color: #96ddeb;
+}
+
+.goods-desc__add-to-cart:active {
+  background-color: #5994a0;
 }
 
 .goods-desc__close {
@@ -1591,7 +1609,7 @@ header {
   }
 
   .cart__count-button {
-    left: 85px;
+    left: 90px;
   }
 }
 

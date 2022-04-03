@@ -135,6 +135,9 @@
     &__add-to-cart:hover{
         background-color: #96ddeb;
     }
+    &__add-to-cart:active{
+        background-color: #5994a0;
+    }
 
     &__close{
         position: absolute;
