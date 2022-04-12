@@ -4,57 +4,44 @@ header{
 	display: flex;
 	background-color: white;
 }
-.menu-list {
-	z-index: 100;
-	float: left;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-
-	@media(max-width: 950px){
-		background-color: white;
-		display: block;
-		position: fixed;
-		width: 250px;
-		left: 0;
-		top: 0;
-		bottom: 0;
-		transition: 0.5s;
-		transform: translateX(-100%);
-		border-right: 1px solid #C4C4C4 ;
-	}
-
-	hr{
-		display: none;
-		
-		@media(max-width: 950px){
-			display: block;
-		}
-	}
-
-	.wrapper_basket{
-		@media(max-width: 950px){
-			display: none;
-		}
-	}
-	.menu__text_basket{
-		@media(max-width: 950px){
-			display: block;
-		}
-	}
-}
-
-.menu-list_active{
-	@media(max-width: 950px){
-		transform: translateX(0);
-	}
-}
 
 .menu{
 	width: 100%;
 	padding: 0 50px;
-
-
+	
+	&__list {
+		z-index: 100;
+		float: left;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	
+		@media(max-width: 950px){
+			background-color: white;
+			display: block;
+			position: fixed;
+			width: 250px;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			transition: 0.5s;
+			transform: translateX(-100%);
+			border-right: 1px solid #C4C4C4 ;
+		}
+	
+		hr{
+			display: none;
+			
+			@media(max-width: 950px){
+				display: block;
+			}
+		}
+	}
+	&__list_active{
+		@media(max-width: 950px){
+			transform: translateX(0);
+		}
+	}
 	&__pushmenu{
 		display: none;
 		position: absolute;
@@ -119,52 +106,14 @@ header{
 	&__text_basket{
 		display: none;
 	}
-	
-}
-
-
-.slider-illustration{
-	display: flex;
-	width: 100%;
-	margin: 0 auto;
-	background-color: white;
-
-    &__inner{
-        position: relative;
-        width: 100%;
-    }
-    &__item{
-        text-align: center;
-        z-index: 0;
-        height: 40vw;
-        max-height: 500px;
-        overflow: hidden;
-    }
-    &__item img{
-        object-fit: contain;
-        height: 100%;
-        display: inline-block;
-    }
-}
-
-.slick-btn-ill{
-	position: absolute;
-	border: none;
-	background-color: transparent;
-	z-index: 1;
-	height: 100%;
-	top: 0;
-	width: 50px;
-}
-.slick-prev-ill{
-	left: 0;
-}
-.slick-next-ill{
-	right: 0;
-}
-
-.icon-ill:before{
-	font-size: 50px;
-	color: #C4C4C4;
-
+	&__wrapper-basket{
+		@media(max-width: 950px){
+			display: none;
+		}
+	}
+	&__text-basket{
+		@media(max-width: 950px){
+			display: block;
+		}
+	}	
 }
