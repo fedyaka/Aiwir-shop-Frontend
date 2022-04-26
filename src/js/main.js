@@ -19,7 +19,7 @@ $('document').ready(function(){
 	// Отзывчивое меню
 	$('.menu__pushmenu').on('click', function() {
 		$('.menu__pushmenu').toggleClass('menu__pushmenu_active');
-		$('.menu-list').toggleClass('menu-list_active');
+		$('.menu__list').toggleClass('menu__list_active');
 
 		$('.content').toggleClass('content_active');
 	});

@@ -1,1 +1,103 @@
-<!DOCTYPE html><html lang="ru"><head>	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<title>Aiwir shop</title>	<link rel="stylesheet" href="css/normalize.css">	<link rel="stylesheet" href="css/fonts.css">	<link rel="preconnect" href="https://fonts.googleapis.com">	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	<link		href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Roboto+Condensed:wght@300;400&display=swap"		rel="stylesheet">	<link rel="stylesheet" href="css/slick.css">	<link rel="stylesheet" href="css/style.min.css"></head><body>	<div class="container-other">		<header>    <nav class="menu">        <ul class="menu__list">            <div class="menu__pushmenu"><span class="icon-menu"></span></div>            <a href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" class="menu__logo" alt=""></picture></a>            <li><a href="index.html" class="menu__link">Главная</a></li>            <hr>            <li><a href="shop.html" class="menu__link">Магазин</a></li>            <hr>            <li><a href="order.html" class="menu__link">Заказать иллюстрацию</a></li>            <hr>            <li><a href="faq.html" class="menu__link">Обо мне и F.A.Q.</a></li>            <hr>            <li><a href="basket.html" class="menu__link menu__text-basket">Корзина</a></li>            <li class="menu__wrapper-basket"><a href="basket.html" class="menu__basket">..</a></li>        </ul>    </nav></header>		<main class="content">			<p class="shop-title title">Магазин</p>			<section class="shop">							</section>		</main>		<footer class="footer content">    <div class = "footer__container">                <div class="footer__info">            <ul>                <li><p class="title-footer">Информация</p></li>                <li><a href="faq.html" class="inf-footer">Обо мне F.A.Q</a></li>                <li><a href="#" class="inf-footer">Политика приватности</a></li>                <li><a href="#" class="inf-footer">Политика возврата</a></li>                <li><a href="#" class="inf-footer">Политика доставки</a></li>            </ul>        </div>        <div class="footer__social">            <div class="footer__icon">                <a href="#"><span class="instagram-footer"></span></a>                <a href="#"><span class="behance-footer"></span></a>            </div>        </div>        <div class="footer__contact">            <ul>                <li><a href="contact.html" class="title-footer">Контакты</a></li>                <li><p class="inf-footer inf-footer_mail">aiwir.malenfant@gmail.com</p></li>            </ul>            <div class="footer__social-contact">                <p class="title-footer">Социальные сети</p>                <div class="footer__icon footer__icon-contact">                    <a href="#"><span class="instagram-footer"></span></a>                    <a href="#"><span class="behance-footer"></span></a>                </div>            </div>        </div>    </div></footer>	</div>	<div id="goods-desc" class="modal-container">		<!-- Шаблон модального окна с описанием товара -->		<!-- <a href="##" class="modal-close"></a>			<section class="goods-desc">				<div class="goods-desc__image-wrap">					<picture><source srcset="img/6eZreHACwRc.webp" type="image/webp"><img src="img/6eZreHACwRc.jpg" alt=""></picture>				</div>				<div class="goods-desc__desc">					<p class="goods-desc__title subtitle">Название</p>					<hr>					<p class="goods-desc__text text">Открытка с иллюстрацией русалки на песке. <br>						размер: 15смх10см <br>						Поверхность: глянцевая <br>						Сзади: место для подписи и марки</p>					<p class="goods-desc__price">цена</p>					<button class="goods-desc__add-to-cart" data-art="'+ key+ '">В корзину</button>				</div>				<a href="##" class="goods-desc__close modal-close">X</a>			</section> -->	</div>	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	<script src="js/slick.min.js"></script>	<script src="js/main.min.js"></script>	<script src="js/shop.min.js"></script></body></html>
+<!DOCTYPE html><html lang="ru"><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aiwir shop</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&amp;family=Roboto+Condensed:wght@300;400&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+<link rel="manifest" href="img/icons/site.webmanifest">
+<link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="img/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="msapplication-config" content="img/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>
+<body>
+	<div class="container-other">
+		<header>
+    <nav class="menu">
+        <ul class="menu__list">
+            <div class="menu__pushmenu"><span class="icon-menu"></span></div>
+            <a href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" class="menu__logo" alt=""></picture></a>
+            <li><a href="index.html" class="menu__link">Главная</a></li>
+            <hr>
+            <li><a href="shop.html" class="menu__link">Магазин</a></li>
+            <hr>
+            <li><a href="order.html" class="menu__link">Заказать иллюстрацию</a></li>
+            <hr>
+            <li><a href="faq.html" class="menu__link">Обо мне и F.A.Q.</a></li>
+            <hr>
+            <li><a href="basket.html" class="menu__link menu__text-basket">Корзина</a></li>
+            <li class="menu__wrapper-basket"><a href="basket.html" class="menu__basket">..</a></li>
+        </ul>
+    </nav>
+</header>
+		<main class="content">
+			<p class="shop-title title">Магазин</p>
+			<section class="shop">
+			</section>
+		</main>
+		<footer class="footer content">
+    <div class="footer__container">
+        <div class="footer__info">
+            <ul>
+                <li><p class="title-footer">Информация</p></li>
+                <li><a href="faq.html" class="inf-footer">Обо мне F.A.Q</a></li>
+                <li><a href="#" class="inf-footer">Политика приватности</a></li>
+                <li><a href="#" class="inf-footer">Политика возврата</a></li>
+                <li><a href="#" class="inf-footer">Политика доставки</a></li>
+            </ul>
+        </div>
+        <div class="footer__social">
+            <div class="footer__icon">
+                <a href="#"><span class="instagram-footer"></span></a>
+                <a href="#"><span class="behance-footer"></span></a>
+            </div>
+        </div>
+        <div class="footer__contact">
+            <ul>
+                <li><a href="contact.html" class="title-footer">Контакты</a></li>
+                <li><p class="inf-footer inf-footer_mail">aiwir.malenfant@gmail.com</p></li>
+            </ul>
+            <div class="footer__social-contact">
+                <p class="title-footer">Социальные сети</p>
+                <div class="footer__icon footer__icon-contact">
+                    <a href="#"><span class="instagram-footer"></span></a>
+                    <a href="#"><span class="behance-footer"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	</div>
+	<div id="goods-desc" class="modal-container">
+		<!-- Шаблон модального окна с описанием товара -->
+		<!-- <a href="##" class="modal-close"></a>
+			<section class="goods-desc">
+				<div class="goods-desc__image-wrap">
+					<picture><source srcset="img/6eZreHACwRc.webp" type="image/webp"><img src="img/6eZreHACwRc.jpg" alt=""></picture>
+				</div>
+				<div class="goods-desc__desc">
+					<p class="goods-desc__title subtitle">Название</p>
+					<hr>
+					<p class="goods-desc__text text">Открытка с иллюстрацией русалки на песке. <br>
+						размер: 15смх10см <br>
+						Поверхность: глянцевая <br>
+						Сзади: место для подписи и марки</p>
+					<p class="goods-desc__price">цена</p>
+					<button class="goods-desc__add-to-cart" data-art="'+ key+ '">В корзину</button>
+				</div>
+				<a href="##" class="goods-desc__close modal-close">X</a>
+			</section> -->
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script src="js/shop.min.js"></script>
+</body></html>
