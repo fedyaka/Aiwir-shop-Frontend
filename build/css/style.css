@@ -169,7 +169,7 @@ header {
   bottom: 20px;
 }
 
-.menu__text_basket {
+.menu__text-basket {
   display: none;
 }
 
@@ -885,7 +885,7 @@ header {
       flex-wrap: wrap;
 }
 
-/*---- BASKET ----*/
+/*---- CART ----*/
 
 .cart {
   width: 100%;
@@ -1012,6 +1012,65 @@ header {
 
 .payment button:hover {
   background-color: #96ddeb;
+}
+
+.create-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #96ddeb;
+  z-index: 1000;
+  text-align: center;
+}
+
+.create-order h2 {
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+.create-order form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.create-order form input {
+  padding: 10px 0;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+}
+
+.create-order form textarea {
+  padding: 10px 0;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+}
+
+.create-order form button {
+  background-color: #96ddeb;
+  border: none;
+  font-size: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.create-order form button:hover {
+  background-color: #BAE4EB;
 }
 
 /*---- GOODS-DESCRIPTION ----*/
@@ -1234,6 +1293,11 @@ header {
     font-size: 30px;
     padding: 10px 40px;
   }
+
+  .create-order form button {
+    font-size: 30px;
+    padding: 10px 40px;
+  }
 }
 
 @media (max-width: 950px) {
@@ -1290,12 +1354,12 @@ header {
     display: block;
   }
 
-  .menu__wrapper-basket {
-    display: none;
-  }
-
   .menu__text-basket {
     display: block;
+  }
+
+  .menu__wrapper-basket {
+    display: none;
   }
 }
 
@@ -1583,6 +1647,11 @@ header {
   }
 
   .payment button {
+    font-size: 24px;
+    padding: 10px 30px;
+  }
+
+  .create-order form button {
     font-size: 24px;
     padding: 10px 30px;
   }

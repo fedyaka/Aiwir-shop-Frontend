@@ -53,8 +53,28 @@
                     <p class="subtitle">Итого:</p>
                     <p class="payment__total-sum text">...</p>
                 </div>
-                <button>Оплатить</button>
+                <a href="#create-order"><button>Форма</button></a>
             </section>
+
+            <div id="create-order" class="modal-container">
+
+                <a href="##" class="modal-close"></a>
+                <section class="create-order">
+
+                    <h2>Введите ваши данные</h2>
+
+                    <form action="#" class="create-order__form">
+                        <input type="text" name="name" placeholder="Введите имя">
+                        <input type="text" name="surname" placeholder="Введите фамилию">
+                        <input type="text" name="phoneNumber" placeholder="Введите номер телефона">
+                        <input type="text" name="address" placeholder="Введите полный адрес">
+                        <textarea name="description" id="" cols="30" rows="10" placeholder="Ваши пожелания к заказу"></textarea>
+                        <button type="submite">Оформить заказ</button>
+                    </form>
+
+                </section>
+
+            </div>
 
 		</main>
 
@@ -71,7 +91,7 @@
 	<script src="js/slick.min.js"></script>
 
 	<script src="js/main.min.js"></script>
-    <script src="js/cart.min.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>

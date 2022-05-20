@@ -139,7 +139,7 @@ function generate_favicon(done) {
 	realFavicon.generateFavicon({
 		masterPicture: path.src.icon,
 		dest: path.build.icon,
-		iconsPath: 'img/icons/',
+		iconsPath: 'icons/',
 		design: {
 			ios: {
 				pictureAspect: 'backgroundAndMargin',

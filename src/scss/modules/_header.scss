@@ -103,17 +103,17 @@ header{
 		bottom: 20px;
 	}
 
-	&__text_basket{
+	&__text-basket{
 		display: none;
-	}
+		@media(max-width: 950px){
+			display: block;
+		}
+	}	
+
 	&__wrapper-basket{
 		@media(max-width: 950px){
 			display: none;
 		}
 	}
-	&__text-basket{
-		@media(max-width: 950px){
-			display: block;
-		}
-	}	
+	
 }
