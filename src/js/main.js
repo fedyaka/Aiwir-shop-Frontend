@@ -1,5 +1,3 @@
-var cart = {}; //Корзина
-
 $('document').ready(function(){
 	// Слайдер на главной странице
 	$('.slider-illustration__inner').slick({
@@ -30,12 +28,29 @@ $('document').ready(function(){
 
 //МЕТОДЫ ДЛЯ ТОВАРОВ
 
+var cart = {}; //Корзина
+
 function checkCart(){
 	//Проверка наличия корзины в localStorage
 	var localCart = localStorage.getItem('cart');
 	if (localCart != null){
 		cart = JSON.parse(localCart);
 	}
+}
+function addToCart(){
+	//Добавление товара в корзину 
+	var id = $(this).attr('data-id');
+	if (cart[id] != undefined){
+		cart[id]++;
+	} else {
+		cart[id] = 1;
+	}
+	setLocalStorage();
+}
+
+function setLocalStorage(){
+	localStorage.setItem('cart', JSON.stringify(cart));
+	showCountGoodsCart();
 }
 
 function showCountGoodsCart(){
@@ -87,18 +102,3 @@ function openDesc(){
 	})
 }
 
-function addToCart(){
-	//Добавление товара в корзину 
-	var id = $(this).attr('data-id');
-	if (cart[id] != undefined){
-		cart[id]++;
-	} else {
-		cart[id] = 1;
-	}
-	setLocalStorage();
-}
-
-function setLocalStorage(){
-	localStorage.setItem('cart', JSON.stringify(cart));
-	showCountGoodsCart();
-}
